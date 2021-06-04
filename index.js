@@ -43,7 +43,7 @@ mongoose.connect(DB,config.urlParser, config.port).then(con=>{
 console.log('DB connection successful!');
 app.listen(config.port, () => {
     console.log(`API-REST  yeiii ejecutando en localhost: ${config.port}`)
-   });
+});
 });
 
 
