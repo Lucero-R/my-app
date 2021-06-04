@@ -4,13 +4,11 @@
   "description": "Aplicación con prodcutos (BDD)",
   "main": "index.js",
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env = jsdom ",
-    " eject " :" react-scripts eject ", 
-    "heroku-postbuild ":" npm run build "
-    }
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
   ,
   "keywords": [
     "node.js",
